@@ -2238,97 +2238,6 @@ span:nth-child(3) {
 }
 
 
-.bid-orbit {
-
-    position: absolute;
-
-    width: 190px;
-
-    height: 190px;
-
-    border-radius: 50%;
-
-    border:
-        1px solid
-        rgba(217,157,83,0.3);
-
-    animation:
-        bidOrbit 8s
-        linear infinite;
-
-}
-
-
-.bid-orbit::after {
-
-    content: "";
-
-    position: absolute;
-
-    width: 9px;
-
-    height: 9px;
-
-    border-radius: 50%;
-
-    background:
-        var(--amber);
-
-    top: -5px;
-
-    left: 50%;
-
-}
-
-
-@keyframes bidOrbit {
-
-    to {
-
-        transform:
-            rotate(360deg);
-
-    }
-
-}
-
-
-.bid-number {
-
-    text-align: center;
-
-    font-family:
-        "Manrope",
-        sans-serif;
-
-    font-size:
-        3.6rem;
-
-    font-weight: 300;
-
-}
-
-
-.bid-number small {
-
-    display: block;
-
-    color:
-        var(--text-muted);
-
-    font-family:
-        "DM Sans",
-        sans-serif;
-
-    font-size:
-        0.5rem;
-
-    letter-spacing:
-        0.15em;
-
-}
-
-
 /* Sentiment */
 
 .project-sentiment {
@@ -4355,4 +4264,92 @@ div:first-child p {
         brightness(0.9)
         contrast(1.03)
         saturate(0.92);
+}
+/* ==================================================
+   PROJECT 3 — ONLINE BIDDING SCREENSHOT
+================================================== */
+
+.project-bid {
+    position: relative;
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            145deg,
+            #1b171d,
+            #10141c
+        );
+}
+
+
+.project-bid .project-screenshot {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    z-index: 0;
+
+    filter:
+        brightness(0.86)
+        contrast(1.03)
+        saturate(0.92);
+
+    transition:
+        transform 0.6s cubic-bezier(.16, 1, .3, 1),
+        filter 0.4s ease;
+}
+
+
+.project-bid .project-image-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    pointer-events: none;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(13, 16, 24, 0.03),
+            rgba(13, 16, 24, 0.20)
+        );
+}
+
+
+.project-bid .project-status {
+    z-index: 2;
+
+    background:
+        rgba(13, 16, 24, 0.74);
+
+    backdrop-filter:
+        blur(10px);
+
+    color: #f1f0ec;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.16);
+}
+
+
+/* Simple hover only — no animation loop */
+
+.project-card:hover
+.project-bid
+.project-screenshot {
+
+    transform: scale(1.025);
+
+    filter:
+        brightness(0.95)
+        contrast(1.02)
+        saturate(0.96);
 }
