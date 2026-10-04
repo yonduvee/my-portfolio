@@ -1,13 +1,3 @@
-/* ==================================================
-   ALVEE
-   PREMIUM FUTURISTIC + CINEMATIC PORTFOLIO
-================================================== */
-
-
-/* ==================================================
-   VARIABLES
-================================================== */
-
 :root {
 
     --bg: #0d1018;
@@ -29,7 +19,6 @@
         rgba(255,255,255,0.11);
 
 
-    /* cinematic accents */
 
     --orange: #f16b45;
 
@@ -53,9 +42,6 @@
 }
 
 
-/* ==================================================
-   LIGHT THEME
-================================================== */
 
 body.light-theme {
 
@@ -84,9 +70,6 @@ body.light-theme {
 }
 
 
-/* ==================================================
-   RESET
-================================================== */
 
 * {
 
@@ -163,9 +146,6 @@ button {
 }
 
 
-/* ==================================================
-   GRAIN
-================================================== */
 
 .grain {
 
@@ -222,10 +202,6 @@ button {
 
 }
 
-
-/* ==================================================
-   AMBIENT LIGHTS
-================================================== */
 
 .ambient,
 .ambient-teal {
@@ -290,10 +266,6 @@ button {
 
 }
 
-
-/* ==================================================
-   NAVIGATION
-================================================== */
 
 .header {
 
@@ -469,10 +441,6 @@ button {
 }
 
 
-/* ==================================================
-   THEME TOGGLE
-================================================== */
-
 .theme-toggle {
 
     display: flex;
@@ -549,10 +517,6 @@ button {
 }
 
 
-/* ==================================================
-   MOBILE MENU
-================================================== */
-
 .mobile-menu-button {
 
     display: none;
@@ -613,9 +577,6 @@ span:last-child {
 }
 
 
-/* ==================================================
-   HERO
-================================================== */
 
 .hero {
 
@@ -948,10 +909,6 @@ span:last-child {
 
 }
 
-
-/* ==================================================
-   HERO VISUAL
-================================================== */
 
 .hero-visual {
 
@@ -1419,10 +1376,6 @@ span:nth-child(3) {
 }
 
 
-/* ==================================================
-   COMMON SECTIONS
-================================================== */
-
 .section {
 
     padding:
@@ -1552,10 +1505,6 @@ span:nth-child(3) {
 
 }
 
-
-/* ==================================================
-   ABOUT
-================================================== */
 
 .about-grid {
 
@@ -1764,10 +1713,6 @@ span:nth-child(3) {
 }
 
 
-/* ==================================================
-   SKILLS
-================================================== */
-
 .skills-grid {
 
     display: grid;
@@ -1965,10 +1910,6 @@ span:nth-child(3) {
 }
 
 
-/* ==================================================
-   PROJECTS
-================================================== */
-
 .projects-grid {
 
     display: grid;
@@ -2051,7 +1992,6 @@ span:nth-child(3) {
 }
 
 
-/* Project AI */
 
 .project-ai {
 
@@ -2155,8 +2095,6 @@ span:nth-child(3) {
 }
 
 
-/* Hospital */
-
 .project-hospital {
 
     background:
@@ -2213,7 +2151,7 @@ span:nth-child(3) {
 }
 
 
-/* Bid */
+
 
 .project-bid {
 
@@ -2237,8 +2175,6 @@ span:nth-child(3) {
 
 }
 
-
-/* Sentiment */
 
 .project-sentiment {
 
@@ -2355,8 +2291,6 @@ span:nth-child(6) {
 
 }
 
-
-/* Project info */
 
 .project-body {
 
@@ -2484,10 +2418,6 @@ span:nth-child(6) {
 }
 
 
-/* ==================================================
-   EXPERIENCE
-================================================== */
-
 .timeline {
 
     border-top:
@@ -2580,10 +2510,6 @@ span:nth-child(6) {
 
 }
 
-
-/* ==================================================
-   EDUCATION
-================================================== */
 
 .education-card {
 
@@ -2736,10 +2662,6 @@ span:nth-child(6) {
 
 }
 
-
-/* ==================================================
-   CONTACT
-================================================== */
 
 .contact-heading {
 
@@ -3031,9 +2953,6 @@ textarea::placeholder {
 }
 
 
-/* ==================================================
-   FOOTER
-================================================== */
 
 .footer {
 
@@ -3117,9 +3036,6 @@ div:first-child p {
 }
 
 
-/* ==================================================
-   BACK TO TOP
-================================================== */
 
 .back-to-top {
 
@@ -3172,10 +3088,6 @@ div:first-child p {
 }
 
 
-/* ==================================================
-   REVEAL
-================================================== */
-
 .reveal {
 
     opacity: 0;
@@ -3200,10 +3112,6 @@ div:first-child p {
 
 }
 
-
-/* ==================================================
-   TABLET
-================================================== */
 
 @media
 (max-width: 950px) {
@@ -3318,10 +3226,6 @@ div:first-child p {
 
 }
 
-
-/* ==================================================
-   MOBILE
-================================================== */
 
 @media
 (max-width: 650px) {
@@ -3532,10 +3436,6 @@ div:first-child p {
 }
 
 
-/* ==================================================
-   REDUCED MOTION
-================================================== */
-
 @media
 (prefers-reduced-motion: reduce) {
 
@@ -3553,9 +3453,7 @@ div:first-child p {
     }
 
 }
-/* ==================================================
-   CURRENTLY LEARNING
-================================================== */
+
 
 .learning-color {
     color: var(--purple);
@@ -3730,8 +3628,6 @@ div:first-child p {
         0.62rem;
 }
 
-
-/* Visual */
 
 .learning-visual {
 
@@ -4000,9 +3896,7 @@ div:first-child p {
     }
 
 }
-/* ==================================================
-   PROJECT 1 — REAL SCREENSHOT + AI OVERLAY
-================================================== */
+
 
 .project-ai {
     position: relative;
@@ -4022,7 +3916,6 @@ div:first-child p {
 }
 
 
-/* Real Screenshot */
 
 .project-screenshot {
     position: absolute;
@@ -4042,9 +3935,6 @@ div:first-child p {
         filter 0.5s ease;
 }
 
-
-/* Slight cinematic treatment */
-
 .project-screenshot {
     filter:
         brightness(0.82)
@@ -4053,7 +3943,6 @@ div:first-child p {
 }
 
 
-/* Grid stays above screenshot */
 
 .project-ai .project-grid {
     position: absolute;
@@ -4081,8 +3970,6 @@ div:first-child p {
         40px 40px;
 }
 
-
-/* Scan line stays above image + grid */
 
 .project-ai .project-scan-line {
     position: absolute;
@@ -4125,8 +4012,6 @@ div:first-child p {
 }
 
 
-/* AI label stays on top */
-
 .project-ai .project-status {
     z-index: 3;
 
@@ -4143,7 +4028,6 @@ div:first-child p {
 }
 
 
-/* Premium hover */
 
 .project-card:hover .project-screenshot {
     transform: scale(1.035);
@@ -4153,9 +4037,7 @@ div:first-child p {
         contrast(1.04)
         saturate(0.95);
 }
-/* ==================================================
-   PROJECT 2 — HOSPITAL SCREENSHOT
-================================================== */
+
 
 .project-hospital {
     position: relative;
@@ -4171,7 +4053,6 @@ div:first-child p {
 }
 
 
-/* Hospital screenshot */
 
 .project-hospital .project-screenshot {
     position: absolute;
@@ -4197,7 +4078,6 @@ div:first-child p {
 }
 
 
-/* Dark cinematic overlay */
 
 .project-hospital .project-image-overlay {
     position: absolute;
@@ -4217,7 +4097,6 @@ div:first-child p {
 }
 
 
-/* Keep + symbol above screenshot */
 
 .project-hospital .hospital-plus {
     z-index: 2;
@@ -4226,14 +4105,11 @@ div:first-child p {
 }
 
 
-/* Keep medical line above screenshot */
-
 .project-hospital .medical-line {
     z-index: 2;
 }
 
 
-/* Label on top */
 
 .project-hospital .project-status {
     z-index: 3;
@@ -4251,7 +4127,6 @@ div:first-child p {
 }
 
 
-/* Hover */
 
 .project-card:hover
 .project-hospital
@@ -4265,9 +4140,7 @@ div:first-child p {
         contrast(1.03)
         saturate(0.92);
 }
-/* ==================================================
-   PROJECT 3 — ONLINE BIDDING SCREENSHOT
-================================================== */
+
 
 .project-bid {
     position: relative;
@@ -4338,9 +4211,6 @@ div:first-child p {
     border:
         1px solid rgba(255, 255, 255, 0.16);
 }
-
-
-/* Simple hover only — no animation loop */
 
 .project-card:hover
 .project-bid
