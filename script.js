@@ -1,3 +1,11 @@
+/* ==================================================
+   ALVEE PORTFOLIO
+================================================== */
+
+
+/* ================================
+   ELEMENTS
+================================ */
 
 const body =
     document.body;
@@ -53,12 +61,17 @@ const contactForm =
     );
 
 
+/* ================================
+   CURRENT YEAR
+================================ */
 
 currentYear.textContent =
     new Date().getFullYear();
 
 
-
+/* ================================
+   DARK / LIGHT THEME
+================================ */
 
 const savedTheme =
     localStorage.getItem(
@@ -110,6 +123,9 @@ themeToggle.addEventListener(
 );
 
 
+/* ================================
+   HEADER SCROLL
+================================ */
 
 function updateHeader() {
 
@@ -141,6 +157,9 @@ window.addEventListener(
 updateHeader();
 
 
+/* ================================
+   MOBILE MENU
+================================ */
 
 mobileMenuButton.addEventListener(
     "click",
@@ -206,6 +225,10 @@ document.addEventListener(
 );
 
 
+/* ================================
+   ACTIVE NAVIGATION
+================================ */
+
 function updateNavigation() {
 
     let activeSection =
@@ -270,6 +293,9 @@ window.addEventListener(
 );
 
 
+/* ================================
+   SCROLL REVEAL
+================================ */
 
 const revealObserver =
     new IntersectionObserver(
@@ -325,6 +351,9 @@ revealElements.forEach(
 );
 
 
+/* ================================
+   BACK TO TOP
+================================ */
 
 function updateBackButton() {
 
@@ -370,6 +399,9 @@ backToTop.addEventListener(
 );
 
 
+/* ================================
+   CONTACT FORM
+================================ */
 
 contactForm.addEventListener(
     "submit",
@@ -440,6 +472,10 @@ contactForm.addEventListener(
             );
 
 
+        /*
+        Replace your@email.com
+        with your real email.
+        */
 
         window.location.href =
 
@@ -452,6 +488,10 @@ contactForm.addEventListener(
     }
 );
 
+
+/* ================================
+   SUBTLE PROJECT TILT
+================================ */
 
 const finePointer =
     window.matchMedia(
